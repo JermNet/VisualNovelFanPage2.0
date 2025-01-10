@@ -1,0 +1,107 @@
+body {
+	font-family: "MS Gothic", "Times New Roman", Times, serif;
+	background-image: url("images/mainbg.jpg");
+	font-size: 22px;
+	line-height: 32px;
+	margin: 0;
+	padding: 16px;
+	
+	/*White smoke (white)*/
+	color: #F5F5F5;
+	word-wrap: break-word !important;
+}
+
+.b1 {
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(254,148,81,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	padding: 20px 0;
+}
+
+p {
+	font-size: 25px;
+	margin: 0 25px;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.round {
+	border-radius: 25px;
+}
+
+
+.marquee {
+	height: 25px;
+	width: 420px;
+	overflow: hidden;
+	position: relative;
+}
+
+.marquee div {
+	display: block;
+	width: 200%;
+	height: 30px;
+	position: absolute;
+	overflow: hidden;
+	animation: marquee 5s linear infinite;
+}
+
+.marquee span {
+	float: left;
+	width: 50%;
+}
+
+
+.text-box img {
+	max-width: 50%;
+	float: left;
+	margin-right: 15px;
+	height: auto;
+}
+
+.text-box-2 img {
+	max-width: 50%;
+	float: right;
+	margin-left: 15px;
+	height: auto;
+}
+
+.text-box p, .text-box-2 p {
+	font-size: 24px;
+}
+
+.wrapper {
+	margin: 50px auto 30px;
+	width: 80%;
+	display: flex;
+}
+
+.wrapper-2 {
+	margin: 50px auto 30px;
+	width: 80%;
+	display: flex;
+}
+
+
+@keyframes marquee {
+	0% {
+		left: 0;
+	}
+	
+	100% {
+		left: -100%;
+	}
+}
